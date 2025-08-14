@@ -93,7 +93,7 @@ End
 			narray = f.childAt(i).name.split(".")
 			if f.ChildAt(i).IsFolder then
 			if (narray(0).length > 0) then
-			dicts(0).value(f.childAt(i).name) = f.childAt(i).NativePath
+			dicts(0).value(f.childAt(i).URLPath) = f.childAt(i).NativePath
 			end if 
 			elseif narray(narray.lastIndex) = "html" then
 			self.addOneNode(f.ChildAt(i),main,nodo,pre+f.childAt(i).name)
@@ -107,7 +107,7 @@ End
 			narray = f1.childAt(j).name.split(".")
 			if f1.childAt(j).isFolder then
 			if (narray(0).length > 0) then
-			dicts(dicts.lastIndex).value(f1.childAt(j).name) = f1.childAt(j).NativePath
+			dicts(dicts.lastIndex).value(f1.childAt(j).URLPath) = f1.childAt(j).NativePath
 			end if 
 			elseif narray(narray.lastIndex) = "html" then
 			relpath = f1.childAt(j).nativePath.nthField(f.nativePath+"/",2)
@@ -123,7 +123,7 @@ End
 			narray = f1.childAt(j).name.split(".")
 			if f1.childAt(j).isFolder then
 			if (narray(0).length > 0) then
-			dicts(dicts.lastIndex).value(f1.childAt(j).name) = f1.childAt(j).NativePath
+			dicts(dicts.lastIndex).value(f1.childAt(j).URLPath) = f1.childAt(j).NativePath
 			end if 
 			elseif narray(narray.lastIndex) = "html" then
 			relpath = f1.childAt(j).nativePath.nthField(f.nativePath+"/",2)
@@ -139,7 +139,7 @@ End
 			narray = f1.childAt(j).name.split(".")
 			if f1.childAt(j).isFolder then
 			if (narray(0).length > 0) then
-			dicts(dicts.lastIndex).value(f1.childAt(j).name) = f1.childAt(j).NativePath
+			dicts(dicts.lastIndex).value(f1.childAt(j).URLPath) = f1.childAt(j).NativePath
 			end if 
 			elseif narray(narray.lastIndex) = "html" then
 			relpath = f1.childAt(j).nativePath.nthField(f.nativePath+"/",2)
@@ -155,7 +155,7 @@ End
 			narray = f1.childAt(j).name.split(".")
 			if f1.childAt(j).isFolder then
 			if (narray(0).length > 0) then
-			dicts(dicts.lastIndex).value(f1.childAt(j).name) = f1.childAt(j).NativePath
+			dicts(dicts.lastIndex).value(f1.childAt(j).URLPath) = f1.childAt(j).NativePath
 			end if 
 			elseif narray(narray.lastIndex) = "html" then
 			relpath = f1.childAt(j).nativePath.nthField(f.nativePath+"/",2)
@@ -171,7 +171,7 @@ End
 			narray = f1.childAt(j).name.split(".")
 			if f1.childAt(j).isFolder then
 			if (narray(0).length > 0) then
-			dicts(dicts.lastIndex).value(f1.childAt(j).name) = f1.childAt(j).NativePath
+			dicts(dicts.lastIndex).value(f1.childAt(j).URLPath) = f1.childAt(j).NativePath
 			end if 
 			elseif narray(narray.lastIndex) = "html" then
 			relpath = f1.childAt(j).nativePath.nthField(f.nativePath+"/",2)
